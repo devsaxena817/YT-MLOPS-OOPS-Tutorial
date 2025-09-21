@@ -12,6 +12,8 @@ class Chatbook:
 3. Press 3 to write a post
 4. Press 4 to message a friend
 5. Press any other key to exit
+                           
+                            
 -> """)
         
         if user_input == '1':
@@ -19,17 +21,9 @@ class Chatbook:
         elif user_input == '2':
             self.signin()
         elif user_input == '3':
-            if self.loggedin:
-                self.write_post()
-            else:
-                print("You need to sign in first.")
-                self.menu()
+            self.my_post()
         elif user_input == '4':
-            if self.loggedin:
-                self.message_friend()
-            else:
-                print("You need to sign in first.")
-                self.menu()
+            self.sendmsg()
         else:
             print("Goodbye!")
             exit()  
@@ -55,16 +49,24 @@ class Chatbook:
                 print("Invalid credentials, please try again.\n")
         self.menu()
     
-    def write_post(self):
-        post = input("Write your post here: ")
-        print(f"Your post has been published: {post}\n")
+    def my_post(self):
+        if self.loggedin==True:
+            txt=input('Enter your message here ->')
+            print('Following content has been published->',txt)
+        else:
+            print('Please signin to write a post')
         self.menu()
     
-    def message_friend(self):
-        friend = input("Enter your friend's name: ")
-        msg = input(f"Write your message to {friend}: ")
-        print(f"Message sent to {friend}: {msg}\n")
+    def sendmsg(self):
+        if self.loggedin==True:
+            txt=input('Enter your message here ->')
+            frnd=input("Whom to send the message? ")
+            print(f"Your message has benn sent to {frnd}")
+        else:
+            print('Please signin to send a message')
         self.menu()
 
+            
+       
 
 obj = Chatbook()
