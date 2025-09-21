@@ -1,0 +1,40 @@
+1. Class and Object (Example).
+
+2. Class has data/attributes and it has fxns/methods.
+
+3 . for example as employee has by default attributes like 
+name ,id, department, salary,
+4.he /she will, also have methods /tasks like report, presentation,travel like methods.
+
+5. another exmple we have is phone 
+attributes- size,weight,camera,pp
+methods -  call, photo.video/net-browse
+
+6. now the blueprint is our class like employee and phone 
+which has some data and fxnalities by default
+if we assign these properties to an entity like 
+Sam becomes an employee or our phone model is Galaxy 15.
+
+7. now these will be called objects which are an instance 
+of our classes.
+our object by default will have the data and fxn of the class.
+
+8. Since we know thta whatever we define inside our constructor gets execured as soon as we create an instnace 
+of the class.
+so what is the use of this ? why can't we define these fxnalities in a different fxn
+Answer : we generally define those parameters inside our constructor which we donot expect the user to do
+like when we open facebook it automatically coonects to the server via internet connection
+the user doesnot require to do it.
+
+9. Python is an object oriented prog lang as whatever datat type or datastructures we
+have are all classes which are defined by developers. the special built in fxnalities
+that we use are actually methods definned inside the classes like string class has capitalize ()
+while list class has clear() method.
+
+10. Advantages of OOPS :
+-> We can create our own datatype
+-> code reusability
+-> debugging
+-> easy to colab
+
+
