@@ -37,4 +37,18 @@ while list class has clear() method.
 -> debugging
 -> easy to colab
 
+11. End to end project (chatbook class)
+-> function vs method
+-> magic method or dunder method
+->self
+-> you can create attribute outside class as well
+
+
+-> encapsulation
+->getter and setter : these are methods to get and set the value of hidden attribute
+we need to access hidden var with class name.
+->static method : we donot need to pass self inside these as we donot need an object to call these
+but we can have our own var and logic inside and we can call them by class name
+
+
 

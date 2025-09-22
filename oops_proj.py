@@ -1,9 +1,29 @@
 class Chatbook:
+
+    __user_id=0
     def __init__(self):
+        # here name is a protected attribute
+        self.id=Chatbook.__user_id
+        Chatbook.__user_id+=1
+        self.__name="Default User"
         self.username = ""
         self.password = ""
         self.loggedin = False
-        self.menu()
+    
+    @staticmethod
+    def get_id():
+        return Chatbook.__user_id
+    
+    @staticmethod
+    def set_id( value):
+        Chatbook.__user_id = value
+        return Chatbook.__user_id
+    
+    def get_name(self):
+        return self.__name
+    def set_name(self, value):
+        self.__name = value
+        
     
     def menu(self):
         user_input = input("""\nWelcome to Chatbook! How would you like to proceed?
