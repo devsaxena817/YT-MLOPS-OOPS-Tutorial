@@ -43,12 +43,25 @@ while list class has clear() method.
 ->self
 -> you can create attribute outside class as well
 
-
+12.
 -> encapsulation
 ->getter and setter : these are methods to get and set the value of hidden attribute
 we need to access hidden var with class name.
 ->static method : we donot need to pass self inside these as we donot need an object to call these
 but we can have our own var and logic inside and we can call them by class name
+
+13. Inheritance
+-> Inherirance code example
+-> why? code reusability, parent has no access to child class
+-> what gets inherited constructor,no private attr, non private methods
+-> contructor overloading : by default the child class inherits the constructor of parent class and can access its attributes bu tonce
+we define a constructor of the child class then it can no longer access parents constructor
+-> method overloading: same as before the child accesses all methods of parents but in case of a method of same name existing in both
+parent and child then the method inside child class will only be accessible to the child.
+-> Super keyword: using super keyword we can access the constructor and methods of our parent class inside out child class
+which were inaccessible due to overloading. Remember we cant use super outside of child class.
+It doesnot access selective var or attributes but the whole method and constructor.
+
 
 
 
